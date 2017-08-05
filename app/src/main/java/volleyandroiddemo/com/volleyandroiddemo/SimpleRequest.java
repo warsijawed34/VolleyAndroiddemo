@@ -130,7 +130,7 @@ public class SimpleRequest extends AppCompatActivity implements View.OnClickList
     //fetching image_url here...
     private void requestImages() {
 
-        ImageRequest imageRequest = new ImageRequest(url_image, new Response.Listener<Bitmap>() {
+        ImageRequest imageRequest = new ImageRequest(Const.URL_IMAGE, new Response.Listener<Bitmap>() {
             @Override
             public void onResponse(Bitmap response) {
                 ivDisplay.setImageBitmap(response);
